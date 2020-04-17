@@ -5,6 +5,7 @@ body {
     font-weight: 300;
     margin: 0;
     font-size: medium;
+    word-wrap: break-word;
 }
 
 a:visited:not([href]), a:hover:not([href]), a:active:not([href]) {
@@ -27,7 +28,7 @@ img {
 }
 
 .nav {
-    background-color: rgb(216, 216, 216);
+    background-color: transparent;
     display: block;
     flex-direction: row;
     position: fixed;
@@ -35,7 +36,7 @@ img {
     left: 0;
     z-index: 3;
     top: 0;
-    color: black;
+    color: white;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
@@ -44,27 +45,54 @@ img {
     text-align: left;
     transition: all 0.2s;
     font-weight: bold;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.788);
 }
 
 .nb {
     padding: 8px;
     text-decoration: none;
-    color: black;
+    color: inherit;
     transition: all 0.2s;
 }
 
-.nb:hover {
+.nb-m {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+    margin-bottom: 2vh;
+    font-size: 120%;
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+    padding: 2vh;
+    margin-bottom: 1vh;
+}
+
+.nb:hover, .nb-m:hover {
     background-color: #4e4e4e17;
 }
 
 .action {
     margin-right: auto;
+    margin-left: 5vh;
 }
 
 .navimg {
     width: 18vh;
     transition: all 0.2s;
-}
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.788)); 
+    text-decoration: none;
+ }
+
+ .footimg {
+    width: 18vh;
+    transition: all 0.2s;
+    text-decoration: none;
+ }
+
+ .nodec {
+    text-decoration: none;
+ }
 
 .container {
     margin: 0 auto;
@@ -94,6 +122,10 @@ img {
     background-image: url(../images/banner.jpg) ;
 }
 
+.golden-days {
+    background-image: url(../images/golden_days_banner.png) ;   
+}
+
 .contain-in {
     text-align: center;
 	width: 100%;
@@ -106,6 +138,22 @@ img {
 	font-weight: 600;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.788);
 	transform: translateY(-50%);
+}
+
+.text- {
+    font-size: 3.14rem;
+	font-weight: 600;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.788);
+}
+
+.pad {
+    padding-top: 50vh;
+}
+
+.text-small {
+    font-size: 2rem;
+	font-weight: 600;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.788);
 }
 
 @media only screen and (max-width: 700px) {
@@ -146,4 +194,89 @@ img {
 
 p {
 font-size: 22px;
+}
+
+.buttonoutline {
+    padding: 12px 30px;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: 2px solid white;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.788);
+    font-weight: 600;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.788);
+}
+
+.dark {
+    border: 2px solid black;
+    color: black;
+}
+
+.buttonoutline:hover {
+    box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.116);
+}
+
+footer {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-weight: 500;
+    font-size: small;
+}
+
+.footext {
+    margin-left: 3vh;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer .footext:hover {
+    text-decoration: underline;
+}
+
+.about-gallery {
+
+}
+
+.bg {
+    position: fixed;
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-color: transparent;
+	z-index: 5;
+	left: 0;
+    top: 0;
+    transition: all 0.2s;
+
+}
+
+.panel {
+    position: absolute;
+    width: 50%;
+	background-color: #e6e6e6;
+	padding: 20px;
+	overflow: auto;
+    border: none;
+    right: -330px;
+    transition: all 0.2s;
+    height: 100%;
+}
+
+.mobile-actions {
+
+}
+
+@media only screen and (max-width: 700px) {
+    footer {
+        text-align: center;
+    }
+
+    .footlink {
+        
+    }
 }
