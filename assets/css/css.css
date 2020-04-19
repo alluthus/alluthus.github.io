@@ -2,7 +2,6 @@ body {
     font-family: 'Roboto', sans-serif; 
     background-color: #e6e6e6;
     color: black;
-    font-weight: 300;
     margin: 0;
     font-size: medium;
     word-wrap: break-word;
@@ -63,12 +62,12 @@ img {
     font-size: 120%;
     font-weight: bold;
     width: 100%;
-    position: fixed;
+    position: relative;
     padding: 2vh;
-    margin-bottom: 1vh;
+    display: block;
 }
 
-.nb:hover, .nb-m:hover {
+.nb:hover, .nb-m:hover, #exita1:hover {
     background-color: #4e4e4e17;
 }
 
@@ -170,6 +169,7 @@ img {
       .nav {
           padding-top: 0;
           padding-bottom: 0;
+          font-size: 100%;
       }
       
       .menu {
@@ -193,7 +193,7 @@ img {
 }
 
 p {
-font-size: 22px;
+font-size: 18px;
 }
 
 .buttonoutline {
@@ -236,10 +236,6 @@ footer a {
 
 footer .footext:hover {
     text-decoration: underline;
-}
-
-.about-gallery {
-
 }
 
 .bg {
@@ -287,4 +283,33 @@ footer .footext:hover {
     .foot-link {
         display: inline-block;
     }
+
+    .pad {
+        padding-top: 30vh;
+    }
+}
+
+#exita1 {
+    display: inline-block;
+	font-size: 1.75rem;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    padding: 8px;
+    padding-top: 12px;
+    top: 0;
+    transition: all 0.2s;
+}
+
+.first {
+    margin-top: 3vh;
+}
+
+.break {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.topped {
+    margin-top: 12vh;
 }
