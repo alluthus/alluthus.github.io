@@ -125,6 +125,14 @@ img {
     background-image: url(../images/golden_days_banner.png) ;   
 }
 
+.ml {
+    background-image: url(../images/memory_lane_banner.png) ;     
+}
+
+.mll {
+    background-image: url(../images/memory_lane_banner2.png) ;       
+}
+
 .contain-in {
     text-align: center;
 	width: 100%;
@@ -145,9 +153,6 @@ img {
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.788);
 }
 
-.notesh {
-    text-shadow: none;
-}
 
 .center {
     text-align: center;
@@ -161,6 +166,10 @@ img {
     font-size: 2rem;
 	font-weight: 600;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.788);
+}
+
+.notesh {
+    text-shadow: none;
 }
 
 @media only screen and (max-width: 700px) {
