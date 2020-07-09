@@ -133,6 +133,22 @@ img {
     background-image: url(../images/memory_lane_banner2.png) ;       
 }
 
+.mlde {
+    background-image: url(../images/memory_lane_banner3.png) ;        
+}
+
+.delx {
+    background-image: url(../images/extba.png) ;        
+}
+
+.urb-gro {
+    background-image: url(../images/urban_groove_banner.png) ;        
+}
+
+.ls {
+    background-image: url(../images/life_banner.png) ;        
+}
+
 .contain-in {
     text-align: center;
 	width: 100%;
