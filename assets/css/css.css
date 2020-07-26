@@ -149,6 +149,10 @@ img {
     background-image: url(../images/life_banner.png) ;        
 }
 
+.intr {
+    background-image: url(../images/photos/photo4.png) ;        
+}
+
 .photogal {
     max-width: 100%;
     margin-bottom: 2vh;
