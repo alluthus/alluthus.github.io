@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     background-color: #e6e6e6;
     color: black;
     margin: 0;
@@ -7,9 +7,11 @@ body {
     word-wrap: break-word;
 }
 
-a:visited:not([href]), a:hover:not([href]), a:active:not([href]) {
+a:visited:not([href]),
+a:hover:not([href]),
+a:active:not([href]) {
     color: inherit;
-  }
+}
 
 a {
     color: inherit;
@@ -19,7 +21,7 @@ a {
 img {
     vertical-align: middle;
     max-width: 100%;
-	border: 0;
+    border: 0;
 }
 
 .menu {
@@ -67,7 +69,9 @@ img {
     display: block;
 }
 
-.nb:hover, .nb-m:hover, #exita1:hover {
+.nb:hover,
+.nb-m:hover,
+#exita1:hover {
     background-color: #4e4e4e17;
 }
 
@@ -79,106 +83,104 @@ img {
 .navimg {
     width: 18vh;
     transition: all 0.2s;
-    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.788)); 
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.788));
     text-decoration: none;
- }
+}
 
- .footimg {
+.footimg {
     width: 18vh;
     transition: all 0.2s;
     text-decoration: none;
- }
+}
 
- .nodec {
+.nodec {
     text-decoration: none;
- }
+}
 
 .container {
     margin: 0 auto;
     max-width: 1280px;
     width: calc(100% - 14px);
-  }
-  
-  @media only screen and (min-width: 601px) {
-    .container {
-      width: 95%;
-    }
-  }
+}
 
-  .banner {
+@media only screen and (min-width: 601px) {
+    .container {
+        width: 95%;
+    }
+}
+
+.banner {
     text-align: center;
-    box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.4);
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     min-height: 100vh;
     object-fit: cover;
-
 }
 
 .intr {
-    background-image: url(../images/banner.jpg) ;
+    background-image: url(../images/banner.jpg);
 }
 
 .golden-days {
-    background-image: url(../images/golden_days_banner.png) ;   
+    background-image: url(../images/golden_days_banner.png);
 }
 
 .ml {
-    background-image: url(../images/memory_lane_banner.png) ;     
+    background-image: url(../images/memory_lane_banner.png);
 }
 
 .mll {
-    background-image: url(../images/memory_lane_banner2.png) ;       
+    background-image: url(../images/memory_lane_banner2.png);
 }
 
 .mlde {
-    background-image: url(../images/memory_lane_banner3.png) ;        
+    background-image: url(../images/memory_lane_banner3.png);
 }
 
 .delx {
-    background-image: url(../images/extba.png) ;        
+    background-image: url(../images/extba.png);
 }
 
 .urb-gro {
-    background-image: url(../images/urban_groove_banner.png) ;        
+    background-image: url(../images/urban_groove_banner.png);
 }
 
 .ls {
-    background-image: url(../images/life_banner.png) ;        
+    background-image: url(../images/life_banner.png);
 }
 
 .intr {
-    background-image: url(../images/photos/photo4.png) ;        
+    background-image: url(../images/photos/photo4.png);
 }
 
 .photogal {
     max-width: 100%;
     margin-bottom: 2vh;
-    box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.4);
 }
 
 .contain-in {
     text-align: center;
-	width: 100%;
-	position: absolute;
-	top: 50%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
 }
 
 .texts {
     font-size: 3.14rem;
-	font-weight: 600;
+    font-weight: 600;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.788);
-	transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .text- {
     font-size: 3.14rem;
-	font-weight: 600;
+    font-weight: 600;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.788);
 }
-
 
 .center {
     text-align: center;
@@ -190,7 +192,7 @@ img {
 
 .text-small {
     font-size: 2rem;
-	font-weight: 600;
+    font-weight: 600;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.788);
 }
 
@@ -200,15 +202,15 @@ img {
 
 .row {
     display: flex;
-  }
-  
-  .column {
+}
+
+.column {
     margin-right: 2vh;
     flex: 33.33%;
     padding: 5px;
-  }
+}
 
-  .cover-al {
+.cover-al {
     width: 40%;
 }
 
@@ -222,39 +224,33 @@ img {
     .row {
         display: block;
     }
-
     .photogal {
         width: 100%;
     }
-
     .navimg {
         width: 12vh;
         padding-top: 8px;
         padding-bottom: 8px;
-      }
-
-      .action {
-          display: none;
-      }
-
-      .nav {
-          padding-top: 0;
-          padding-bottom: 0;
-          font-size: 100%;
-      }
-      
-      .menu {
-		display: inline-block;
-		font-size: 1.75rem;
+    }
+    .action {
+        display: none;
+    }
+    .nav {
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 100%;
+    }
+    .menu {
+        display: inline-block;
+        font-size: 1.75rem;
         cursor: pointer;
         position: absolute;
         right: 5px;
         padding: 8px;
         padding-top: 12px;
-  }
-
-  .banner {
-      background-position: center;
+    }
+    .banner {
+        background-position: center;
     }
 }
 
@@ -264,7 +260,7 @@ img {
 }
 
 p {
-font-size: 18px;
+    font-size: 18px;
 }
 
 .buttonoutline {
@@ -282,7 +278,7 @@ font-size: 18px;
 }
 
 .buttonoutline .fa {
-	font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 .dark {
@@ -297,7 +293,7 @@ font-size: 18px;
 }
 
 .buttonoutline:hover {
-    box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.4);
     background-color: rgba(0, 0, 0, 0.116);
 }
 
@@ -327,32 +323,29 @@ footer .footext:hover {
 
 .bg {
     position: fixed;
-	height: 100%;
-	width: 100%;
-	display: none;
-	background-color: transparent;
-	z-index: 5;
-	left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: transparent;
+    z-index: 5;
+    left: 0;
     top: 0;
     transition: all 0.2s;
-
 }
 
 .panel {
     position: absolute;
     width: 50%;
-	background-color: #e6e6e6;
-	padding: 20px;
-	overflow: auto;
+    background-color: #e6e6e6;
+    padding: 20px;
+    overflow: auto;
     border: none;
     right: -330px;
     transition: all 0.2s;
     height: 100%;
 }
 
-.mobile-actions {
-
-}
+.mobile-actions {}
 
 .foot-link {
     display: none;
@@ -362,15 +355,12 @@ footer .footext:hover {
     footer {
         text-align: center;
     }
-
     .footlink {
         display: none;
     }
-
     .foot-link {
         display: inline-block;
     }
-
     .pad {
         padding-top: 30vh;
     }
@@ -378,7 +368,7 @@ footer .footext:hover {
 
 #exita1 {
     display: inline-block;
-	font-size: 1.75rem;
+    font-size: 1.75rem;
     cursor: pointer;
     position: absolute;
     right: 5px;
