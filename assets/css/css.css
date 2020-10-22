@@ -156,6 +156,14 @@ img {
     background-image: url(../images/photos/photo4.png);
 }
 
+.undep {
+    background-image: url(../images/undertow_ep.png);
+}
+
+.undet {
+    background-image: url(../images/undertow_ep2.png);
+}
+
 .photogal {
     max-width: 100%;
     margin-bottom: 2vh;
