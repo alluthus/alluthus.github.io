@@ -13,6 +13,10 @@ a:active:not([href]) {
     color: inherit;
 }
 
+.marbggs {
+    margin-block-start: 0;
+}
+
 a {
     color: inherit;
     text-decoration: underline;
@@ -23,6 +27,13 @@ img {
     max-width: 100%;
     border: 0;
 }
+
+.centr {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 .menu {
     display: none;
@@ -176,6 +187,10 @@ img {
 
 .undert {
     background-image: url(../images/undertow.png);
+}
+
+.wheel {
+    background-image: url(../images/wheel.png);
 }
 
 .contain-in {
@@ -373,7 +388,9 @@ footer .footext:hover {
     height: 100%;
 }
 
-.mobile-actions {}
+.tri {
+    max-width: 500px;
+}
 
 .foot-link {
     display: none;
@@ -394,6 +411,9 @@ footer .footext:hover {
     }
     .pad {
         padding-top: 30vh;
+    }
+    .tri {
+        max-width: 60%;
     }
 }
 
