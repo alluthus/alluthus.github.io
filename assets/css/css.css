@@ -441,3 +441,7 @@ footer .footext:hover {
 .topped {
     margin-top: 12vh;
 }
+
+.nosh {
+    box-shadow: none;
+}
