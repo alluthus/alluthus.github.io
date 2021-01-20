@@ -1,10 +1,11 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #e6e6e6;
-    color: black;
+    font-family: "Eras ITC", "Eras Light ITC",  sans-serif ;
+    background-color: var(--bg);
+    color: var(--text);
     margin: 0;
-    font-size: medium;
+    font-size: large;
     word-wrap: break-word;
+    transition: all 0.2s;
 }
 
 a:visited:not([href]),
@@ -17,6 +18,17 @@ a:active:not([href]) {
     margin-block-start: 0;
 }
 
+h1 {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+.right {
+    text-align: right;
+}
+
 a {
     color: inherit;
     text-decoration: underline;
@@ -26,6 +38,39 @@ img {
     vertical-align: middle;
     max-width: 100%;
     border: 0;
+}
+
+.card {
+   padding: 2vh;
+   background-color: var(--bgnavcol);
+   color: var(--navcol);
+   border-radius: 0.5vh;
+}
+
+.cards {
+    transition: all 0.8s;
+    border-radius: .5vh;
+    background-color: var(--bgnavcol);
+    width: 320px;
+    height: 400px;
+    padding: 2vh;
+    box-sizing: border-box;
+    margin: 0.8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.288);
+    text-decoration: none;
+    color: white;
+}
+
+.cards, .bomarg {
+    margin-bottom: 2vh;
+}
+
+.fontml {
+    font-family: Gabriola
 }
 
 .centr {
@@ -40,7 +85,7 @@ img {
 }
 
 .nav {
-    background-color: transparent;
+    background-color: var(--bgnavcol);
     display: block;
     flex-direction: row;
     position: fixed;
@@ -48,7 +93,7 @@ img {
     left: 0;
     z-index: 3;
     top: 0;
-    color: white;
+    color: var(--navcol);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
@@ -57,7 +102,6 @@ img {
     text-align: left;
     transition: all 0.2s;
     font-weight: bold;
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.788);
 }
 
 .nb {
@@ -94,7 +138,6 @@ img {
 .navimg {
     width: 18vh;
     transition: all 0.2s;
-    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.788));
     text-decoration: none;
 }
 
@@ -111,7 +154,8 @@ img {
 .container {
     margin: 0 auto;
     max-width: 1280px;
-    width: calc(100% - 14px);
+    width: calc(100% - 60px);
+    display: block;
 }
 
 @media only screen and (min-width: 601px) {
@@ -123,12 +167,26 @@ img {
 .banner {
     text-align: center;
     box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.4);
-    color: white;
+    color: var(--banncol);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     min-height: 100vh;
     object-fit: cover;
+    position: relative;
+}
+
+.leswi {
+    width: 100%;
+    min-height: 40vh;
+}
+
+.mainimg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 30vh;
 }
 
 .intr {
@@ -173,6 +231,10 @@ img {
 
 .undet {
     background-image: url(../images/undertow_ep2.png);
+}
+
+.ope {
+    background-image: url(../images/wheel.png);
 }
 
 .photogal {
@@ -236,9 +298,9 @@ img {
 }
 
 .column {
-    margin-right: 2vh;
     flex: 33.33%;
-    padding: 5px;
+    display: inline-block;
+    margin-right: 2vh;
 }
 
 .cover-al {
@@ -287,33 +349,77 @@ img {
     .banner {
         background-position: center;
     }
+    .mbcent {
+        text-align: center;
+    }
 }
 
 .after {
     margin-top: 2vh;
     margin-bottom: 2vh;
+    position: relative;
+}
+
+.afters {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    position: relative;
 }
 
 p {
     font-size: 18px;
 }
 
-.buttonoutline {
-    padding: 12px 30px;
-    text-decoration: none;
-    transition: all 0.2s;
-    border: 2px solid white;
-    font-size: 20px;
-    text-decoration: none;
+.featureh {
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.eh {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
     color: white;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.788);
-    font-weight: 600;
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.788);
-    margin: 0.9rem 0;
+}
+
+.feacont {
+    margin: .75rem 18px 1.5rem 0;
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--text);
 }
 
 .inli {
+    display: inline;
+}
+
+.buttonoutline {
     display: inline-block;
+    padding: 12px 30px;
+    transition: all 0.2s;
+    border: 2px solid var(--text);
+    border-radius: .5vh;
+    text-decoration: none;
+    color: var(--text);
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.288);
+    font-weight: 600;
+    text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.288);
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.footbut {
+    margin-right: 1.3vh;
+}
+
+.banner .buttonoutline {
+    border: 2px solid var(--banncol);
+    color: var(--banncol);
 }
 
 .marginbu {
@@ -325,7 +431,6 @@ p {
 }
 
 .dark {
-    border: 2px solid black;
     color: black;
 }
 
@@ -379,7 +484,7 @@ footer .footext:hover {
 .panel {
     position: absolute;
     width: 50%;
-    background-color: #e6e6e6;
+    background-color: var(--bgnavcol);
     padding: 20px;
     overflow: auto;
     border: none;
@@ -444,4 +549,233 @@ footer .footext:hover {
 
 .nosh {
     box-shadow: none;
+}
+
+.ava {
+	background: #ccc url("../images/alluthus_.png") no-repeat center center;
+	background-size: cover;
+	margin: -7rem auto auto auto;
+	box-sizing: border-box;
+	border-radius: 50%;
+	height: 225px;
+	max-height: 225px;
+	max-width: 225px;
+	border: 3px solid var(--bgnavcol);
+    box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.4);
+    z-index: 5;
+}
+
+.mainni {
+    display: flex;
+    flex-direction: row;
+}
+
+.mainim {
+    width: 20vh;
+    margin: 1.2vh;
+}
+
+.underep {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #263143),
+    url('../images/undertow_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%;
+}
+
+.mlcar {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #2d5181),
+    url('../images/memory_lane_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%;
+}
+
+.aurora {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #2c5a34),
+    url('../images/aurora_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%;
+}
+
+.sti {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #2363f4),
+    url('../images/stibarc_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.self-alb {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #5b7cba),
+    url('../images/self_titled_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.gals {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #dd56be),
+    url('../images/photos_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.golday {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #6d6d6d),
+    url('../images/golden_days_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.recordssti {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #7dabb9),
+    url('../images/records_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.rinfi {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #988ef0),
+    url('../images/infinite_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.lifest {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #5a61bb),
+    url('../images/lifest_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.fnova {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #ff5616),
+    url('../images/fiber_nova_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.lifegame {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #305b31),
+    url('../images/lifegame_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.urbgroove {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #988ef0),
+    url('../images/urban_groove_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.firefly {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #204d34),
+    url('../images/firefly_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.cards:hover {
+    background-size: 130%;
+    cursor: pointer;
+    color: white;
+}
+
+.wrapper {
+    overflow: hidden; 
+    height: 300px;
+}
+
+::-webkit-scrollbar {
+    width: 1.2vh;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 1.3vh;
+    background: var(--scrollbg);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrolltra);
+    border-radius: 1.3vh;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollhov);
+  }
+
+  .nopointer {
+    cursor: default;
+}
+
+.nopointer:hover {
+    cursor: default;
 }

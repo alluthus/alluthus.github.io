@@ -1,0 +1,36 @@
+:root {
+    --bg: #e6e6e6;
+    --text: black;
+    --bgnavcol:  rgb(216, 216, 216);
+    --navcol: black;
+    --banncol: white;
+    --scrollbg: #cfcfcf;
+    --scrolltra: #929292;
+    --scrollhov: #6d6d6d;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: rgb(49, 49, 49);
+        --text: white;
+        --bgnavcol: #181818;
+        --navcol: white;
+        --banncol: white;
+        --scrollbg: #4d4d4d;
+        --scrolltra: #929292;
+        --scrollhov: #6d6d6d;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+    --bg: #e6e6e6;
+    --text: black;
+    --bgnavcol:  rgb(216, 216, 216);
+    --navcol: black;
+    --banncol: white;
+    --scrollbg: #cfcfcf;
+    --scrolltra: #929292;
+    --scrollhov: #6d6d6d;
+    }
+}
