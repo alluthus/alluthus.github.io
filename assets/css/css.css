@@ -352,6 +352,10 @@ img {
     .mbcent {
         text-align: center;
     }
+
+    .right {
+        text-align: right;
+    }
 }
 
 .after {
