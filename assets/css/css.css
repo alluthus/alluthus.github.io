@@ -834,3 +834,56 @@ footer .footext:hover {
     object-fit: cover;
     position: relative;
 }
+
+.rounded {
+    border-radius: 2vh;
+}
+
+.disco {
+    margin-top: 2vh;
+}
+
+.nomarg {
+    margin: 0;
+}
+
+.no-c {
+    justify-content: left;
+}
+
+.noc {
+    justify-content: left;
+}
+
+.aa {
+    width: 100%;
+ }
+
+ .sev {
+     max-width: 70%;
+ }
+
+ .na {
+     max-width: 50%;
+ }
+
+.mins {
+    min-width: 100%;
+}
+
+.sing {
+    width: 31%;
+}
+@media only screen and (max-width: 700px) {
+    .no-c {
+        display: block
+    }
+
+    .aa{
+        width: 100%;
+    }
+
+    .sev {
+        max-width: 50%;
+    }
+}
