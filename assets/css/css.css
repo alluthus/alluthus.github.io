@@ -887,3 +887,36 @@ footer .footext:hover {
         max-width: 50%;
     }
 }
+
+
+.annc {
+    width: 100%;
+    min-height: 20vh;
+    box-shadow: none;
+}
+
+.jm {
+    background-image: url(https://versocre.github.io/jmadril/assets/images/default_banner.png);
+}
+
+.jma {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 10vh;
+}
+
+.bim {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+.bimt {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
