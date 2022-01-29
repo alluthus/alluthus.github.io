@@ -264,6 +264,11 @@ img {
     background-image: url(../images/wheel.png);
 }
 
+.seall {
+    background-image: url(../images/self_titled_banner.png);
+ 
+}
+
 .contain-in {
     text-align: center;
     width: 100%;
@@ -569,7 +574,7 @@ footer .footext:hover {
 }
 
 .ava {
-	background: #ccc url("../images/alluthus_.png") no-repeat center center;
+	background: #ccc url("../images/alluthus_2022.png") no-repeat center center;
 	background-size: cover;
 	margin: -7rem auto auto auto;
 	box-sizing: border-box;
@@ -777,6 +782,54 @@ footer .footext:hover {
     background-image:
     linear-gradient(to bottom, rgba(245, 246, 252, 0), #265226),
     url('../images/life_reissue_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.midnightparty {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #0f1426),
+    url('../images/mp_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.myuujikku {
+    background-image:
+    linear-gradient(to bottom, #fedec800, #ad9889),
+    url('../images/music_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.kmd {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), #0f1426),
+    url('../images/kmd_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.selftitle {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), #dfdfdf),
+    url('../images/self_titled_card2.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
