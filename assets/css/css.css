@@ -269,6 +269,11 @@ img {
  
 }
 
+.twen20 {
+    background-image: url(../images/20_banner_web.png);
+}
+
+
 .contain-in {
     text-align: center;
     width: 100%;
@@ -830,6 +835,30 @@ footer .footext:hover {
     background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 0), #dfdfdf),
     url('../images/self_titled_card2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.twentwen {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), #dfdfdf),
+    url('../images/20_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.kodo {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), #fdf08e),
+    url('../images/kodo_single_card.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
