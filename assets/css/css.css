@@ -181,6 +181,16 @@ img {
     min-height: 40vh;
 }
 
+.imgmain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 30vh;
+	border-radius: 50%;
+    box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.4);
+}
+
 .mainimg {
     position: absolute;
     top: 50%;
@@ -196,6 +206,11 @@ img {
 .golden-days {
     background-image: url(../images/golden_days_banner.png);
 }
+
+.ephana {
+    background-image: url(../images/hanabi_ep_banner.png);
+}
+
 
 .ml {
     background-image: url(../images/memory_lane_banner.png);
@@ -262,6 +277,11 @@ img {
 
 .wheel {
     background-image: url(../images/wheel.png);
+}
+
+.hana {
+    background-image: url(../images/alluthus_2023_banner.png);
+ 
 }
 
 .seall {
@@ -579,7 +599,7 @@ footer .footext:hover {
 }
 
 .ava {
-	background: #ccc url("../images/alluthus_2022.png") no-repeat center center;
+	background: #ccc url("../images/2023_pfp.png") no-repeat center center;
 	background-size: cover;
 	margin: -7rem auto auto auto;
 	box-sizing: border-box;
@@ -823,6 +843,30 @@ footer .footext:hover {
     background-image:
     linear-gradient(to bottom, rgba(245, 246, 252, 0), #0f1426),
     url('../images/kmd_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.flare {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), #f87772ff),
+    url('../images/flare_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.hanabiep {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), #dfdfdf),
+    url('../images/hanabi_card.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
