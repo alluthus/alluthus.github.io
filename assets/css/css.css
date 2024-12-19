@@ -293,6 +293,10 @@ img {
     background-image: url(../images/20_banner_web.png);
 }
 
+.thexmascol {
+    background-image: url(../images/christmas_collection_banner.png);
+}
+
 
 .contain-in {
     text-align: center;
@@ -903,6 +907,18 @@ footer .footext:hover {
     background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 0), #fdf08e),
     url('../images/kodo_single_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.xmascol {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), #93aa95),
+    url('../images/christmas_collection_card.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
