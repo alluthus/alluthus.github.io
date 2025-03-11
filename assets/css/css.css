@@ -297,6 +297,10 @@ img {
     background-image: url(../images/christmas_collection_banner.png);
 }
 
+.greathitsvol1 {
+    background-image: url(../images/gh_v1_banner.png);
+}
+
 
 .contain-in {
     text-align: center;
@@ -919,6 +923,18 @@ footer .footext:hover {
     background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 0), #93aa95),
     url('../images/christmas_collection_card.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%; 
+}
+
+.greathitsvolcar1 {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), #d09500ff),
+    url('../images/gh_v1_card.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
