@@ -591,11 +591,16 @@ main {
 }
 
 .disco-entry {
-    margin: 8px 8px;
+    margin: 0;
 }
 
 .disco-art-cover {
+    display: block;
+    width: 100%;
+    height: 100%;
     max-width: 39vh;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 0.5vh;
     backface-visibility: hidden;
 
@@ -603,7 +608,11 @@ main {
 
 .image-container {
     position: relative;
-    display: inline-block;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 0.5vh;
 }
 
 .disco-text-cover-overlay {
@@ -632,7 +641,22 @@ main {
 .flex.disco-list,
 .flex-center.disco-list,
 .flex-center-col.disco-list {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    align-items: start;
+}
+
+.disco-list .disco-entry {
+    width: 100%;
+}
+
+.disco-list .disco-entry>a {
+    display: block;
+}
+
+.disco-list .disco-art-cover {
+    max-width: none;
 }
 
 .disco-name {
@@ -743,8 +767,7 @@ li.track-list-item+li.track-list-item {
 
 @media only screen and (max-width: 735px) {
     .card.flex.disco-list {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
     }
 }
 
